@@ -86,7 +86,19 @@ jre_header_c('https://traininfo.jreast.co.jp/delay_certificate/','600');
 										<tr>
 											<td><img src="./JR東日本：遅延証明書_files/_.gif" width="1" height="10" border="0" alt=""></td>
 										</tr>
-										<tr><td class="text-l"><b><span id="lblDelayDate">2022年1月15日（土）</span></b></td></tr>
+										<tr><td class="text-l"><b><span id="lblDelayDate"><script>
+//今日の日付データを変数に格納
+//変数は"today"とする
+var today=new Date(); 
+//年・月・日・曜日を取得
+var year = today.getFullYear();
+var month = today.getMonth()+1;
+var week = today.getDay();
+var day = today.getDate();
+var week_ja= new Array("日","月","火","水","木","金","土");
+//年・月・日・曜日を書き出す
+document.write(year+"年"+month+"月"+day+"日　("+week_ja[week]+")");
+</script></span></b></td></tr>
 										<tr>
 											<td><img src="./JR東日本：遅延証明書_files/_.gif" width="1" height="10" border="0" alt=""></td>
 										</tr>

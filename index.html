@@ -97,7 +97,7 @@ var week = today.getDay();
 var day = today.getDate();
 var week_ja= new Array("日","月","火","水","木","金","土");
 //年・月・日・曜日を書き出す
-document.write(year+"年"+month+"月"+day+"日　("+week_ja[week]+")");
+document.write(year+"年"+month+"月"+day+"日（"+week_ja[week]+"）");
 </script></span></b></td></tr>
 										<tr>
 											<td><img src="./JR東日本：遅延証明書_files/_.gif" width="1" height="10" border="0" alt=""></td>
@@ -175,7 +175,20 @@ document.write(year+"年"+month+"月"+day+"日　("+week_ja[week]+")");
 											<td><img src="./JR東日本：遅延証明書_files/_.gif" width="1" height="10" border="0" alt=""></td>
 										</tr>
 										<tr>
-											<td class="text-m" align="right"><b><span id="lblTimestmp">2022年1月15日</span><br>
+											<td class="text-m" align="right"><b><span id="lblTimestmp"><script>
+//今日の日付データを変数に格納
+//変数は"today"とする
+var today=new Date(); 
+//年・月・日・曜日を取得
+var year = today.getFullYear();
+var month = today.getMonth()+1;
+var week = today.getDay();
+var day = today.getDate();
+var week_ja= new Array("日","月","火","水","木","金","土");
+//年・月・日・曜日を書き出す
+document.write(year+"年"+month+"月"+day+"日（"+week_ja[week]+"）");
+</script>
+</span><br>
 												東日本旅客鉄道株式会社</b></td>
 										</tr>
 										<tr>

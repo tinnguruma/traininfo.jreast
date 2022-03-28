@@ -3,4 +3,4 @@
 # 
 毎日日付の部分が変わります。
 # 
-https://tinnguruma.github.io/renewsite/
+https://tinnguruma.github.io/traininfo.jreast.co.jp-delay_certificate/
